@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arjun Reddy Title Like Name Generator</title>
+    <meta name="description" content="Arjun Reddy movie title like name generator. Near font for Arjun Reddy title is Monster Ag.">
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+</head>
+<body>
+<section>
+    <h1 align="center">Arjun Reddy Fame Title Generator</h1>
+    <div class="image">
+        <img class="svgClipped" src="ARbackground.png" />
+        <svg height="0" width="0" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <clippath id="svgPath">
+                    <text x="0" y="0" dominant-baseline="middle" alignment-baseline="middle" text-anchor="middle" font-weight="700" font-family="monster_agregular" font-size="120px">
+                        <tspan x="0">jyothi babu</tspan>
+                        <tspan x="0" dy="70">araja</tspan>
+                    </text>
+                </clippath>
+            </defs>
+        </svg>
+    </div>
+</section>
+<script>
+    var names = unescape(window.location.search.slice(1).toLowerCase()).split(" ");
+    var el = document.querySelector(".image"), elWidth = el.clientWidth, elHeight = el.clientHeight;
+    var text = document.querySelector("text");
+    text.setAttribute("x", elWidth / 2);
+    text.setAttribute("y", elHeight / 3);
+    document.querySelectorAll("tspan").forEach(function (node, index) {
+        node.setAttribute("x", elWidth / 2);
+        node.innerHTML = names[index];
+    });
+
+    //TODO: allow image download
+    var DOMURL = window.URL || window.webkitURL || window;
+
+    /*var canvas = document.createElement("canvas"),
+        context = canvas.getContext("2d");
+
+    document.body.appendChild(canvas);
+    var image = new Image();
+    var blob = new Blob([section.innerHTML], {type: 'image/svg+xml'});
+    var url = DOMURL.createObjectURL(blob);
+    image.src = url;
+
+    context.drawImage(image, 0, 0);
+    var a = document.createElement("a");
+    a.download = "ArjunReddy.png";
+    a.href = canvas.toDataURL("image/png");
+    a.click();*/
+</script>
+</body>
+</html>

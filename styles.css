@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'monster_agregular';
+    src: url('./fonts/monsterag-webfont.woff2') format('woff2'),
+    url('./fonts/monsterag-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.image {
+    width: 100%;
+    text-align: center;
+    background: transparent;
+}
+
+.svgClipped {
+    -webkit-clip-path: url(#svgPath);
+    clip-path: url(#svgPath);
+}
+img {
+    width: 100%;
+}
+
+text{
+    position: absolute;
+}
