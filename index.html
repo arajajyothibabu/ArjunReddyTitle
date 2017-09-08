@@ -28,7 +28,7 @@
     var el = document.querySelector(".image"), elWidth = el.clientWidth, elHeight = el.clientHeight;
     var text = document.querySelector("text");
     text.setAttribute("x", elWidth / 2);
-    text.setAttribute("y", elHeight / 3);
+    text.setAttribute("y", elHeight / 2.5);
     document.querySelectorAll("tspan").forEach(function (node, index) {
         node.setAttribute("x", elWidth / 2);
         node.innerHTML = names[index];
