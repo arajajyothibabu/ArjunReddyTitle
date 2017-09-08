@@ -14,7 +14,7 @@
         <svg height="0" width="0" xmlns="http://www.w3.org/2000/svg">
             <defs>
                 <clippath id="svgPath">
-                    <text x="0" y="0" dominant-baseline="middle" alignment-baseline="middle" text-anchor="middle" font-weight="700" font-family="monster_agregular" font-size="120px">
+                    <text x="0" y="0" dominant-baseline="middle" alignment-baseline="middle" text-anchor="middle" font-weight="700" font-family="monster_agregular" font-size="110px">
                         <tspan x="0">jyothi babu</tspan>
                         <tspan x="0" dy="70">araja</tspan>
                     </text>
@@ -28,7 +28,7 @@
     var el = document.querySelector(".image"), elWidth = el.clientWidth, elHeight = el.clientHeight;
     var text = document.querySelector("text");
     text.setAttribute("x", elWidth / 2);
-    text.setAttribute("y", elHeight / 2.5);
+    text.setAttribute("y", elHeight / 3);
     document.querySelectorAll("tspan").forEach(function (node, index) {
         node.setAttribute("x", elWidth / 2);
         node.innerHTML = names[index];
